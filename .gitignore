@@ -3,3 +3,4 @@ package.json
 package-lock.json
 /.vscode
 temp_img.jpg
+temp_img_sized.jpg
