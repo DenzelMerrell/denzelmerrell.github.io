@@ -11,58 +11,52 @@
 -->
 
 <html>
-  <head>
-    <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
+<head>
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- <link rel="stylesheet" href="./node_modules/dist/css/bootstrap.css" /> -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 
-    <!-- My Css -->
-    <link rel="stylesheet" href="portfolio.css" />
+  <!-- <link rel="stylesheet" href="./node_modules/dist/css/bootstrap.css" /> -->
 
-    <!-- Arvo Font -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
-      rel="stylesheet"
-    />
+  <!-- My Css -->
+  <link rel="stylesheet" href="portfolio.css" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Arvo Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet" />
 
-  <body id="page-top">
-    <header>
-      <!-- Navigation -->
-      <div class="div_navigation">
-        <input class="toggler" type="checkbox" />
-        <!-- Hamburger -->
-        <div class="hamburger">
-          <div></div>
-        </div>
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet" />
+</head>
 
-        <nav>
-          <ul>
-            <li><a href="#page-top">About Me</a></li>
-            <li><a href="#section_projects">Projects</a></li>
-            <li><a href="#section_contactMe">Contact Me</a></li>
-          </ul>
-        </nav>
+<body id="page-top">
+  <header>
+    <!-- Navigation -->
+    <div class="div_navigation">
+      <input class="toggler" type="checkbox" />
+      <!-- Hamburger -->
+      <div class="hamburger">
+        <div></div>
       </div>
 
-      <!-- About Me -->
-      <div class="container">
-        <h1 class="h1_welcome">Welcome!</h1>
-        <div id="div_aboutMe">
+      <nav>
+        <ul>
+          <li><a href="#page-top">About Me</a></li>
+          <li><a href="#section_projects">Projects</a></li>
+          <li><a href="#section_contactMe">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- About Me -->
+
+    <!-- <h1 class="h1_welcome">Welcome!</h1> -->
+
+    <div id="div_aboutMe">
+      <div class="overlay">
+        <div class="container">
           <!-- <img class="img_myImage" src="temp_img.jpg" /> -->
           <div>
             <h2>About Me</h2>
@@ -80,137 +74,111 @@
           </div>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- Projects -->
-    <section id="section_projects" class="page-projects">
-      <div class="container">
-        <h1>Projects</h1>
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleIndicators"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card bg-primary text-primary" style="width: 18rem;">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Project title</h5>
-                  <p class="card-text">Project Description.</p>
-                  <a href="#" class="btn btn-primary">Github Link</a>
-                </div>
-              </div>
+
+  </header>
+
+  <!-- Projects -->
+  <section id="section_projects" class="page-projects">
+    <!-- <div class="container"> -->
+    <h1>Projects</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card bg-primary text-primary" style="width: 18rem;">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
+              class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Project title</h5>
+              <p class="card-text">Project Description.</p>
+              <a href="#" class="btn btn-primary">Github Link</a>
             </div>
-            <div class="carousel-item">
-              <div>
-                <div class="card bg-primary text-primary" style="width: 18rem;">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Project title</h5>
-                    <p class="card-text">Project Description.</p>
-                    <a href="#" class="btn btn-primary">Github Link</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div>
-                <div class="card bg-primary text-primary" style="width: 18rem;">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Project title</h5>
-                    <p class="card-text">Project Description.</p>
-                    <a href="#" class="btn btn-primary">Github Link</a>
-                  </div>
-                </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="card bg-primary text-primary" style="width: 18rem;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
+                class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Project title</h5>
+                <p class="card-text">Project Description.</p>
+                <a href="#" class="btn btn-primary">Github Link</a>
               </div>
             </div>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleIndicators"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+        </div>
+        <div class="carousel-item">
+          <div>
+            <div class="card bg-primary text-primary" style="width: 18rem;">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
+                class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Project title</h5>
+                <p class="card-text">Project Description.</p>
+                <a href="#" class="btn btn-primary">Github Link</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- </div> -->
+  </section>
 
-    <!-- Contact Me -->
+  <!-- Contact Me -->
 
-    <section id="section_contactMe">
-      <h1>Contact Me</h1>
-      <div>
-        <p>Cell: <a href="tel:5554280940">555-428-0940</a></p>
-        <p>
-          Email: <a href="mailto:something@gmail.com">something@gmail.com</a>
-        </p>
-      </div>
-    </section>
+  <section id="section_contactMe">
+    <h1>Contact Me</h1>
+    <div>
+      <p>Cell: <a href="tel:5554280940">555-428-0940</a></p>
+      <p>
+        Email: <a href="mailto:something@gmail.com">something@gmail.com</a>
+      </p>
+    </div>
+  </section>
 
-    <footer>
-      some text here
-    </footer>
+  <footer>
+    some text here
+  </footer>
 
-    <!-- Bootstrap -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <!-- <script type="text/javascript">
+  <!-- <script type="text/javascript">
         //starts the carousel
         $(document).ready(function () {
             $('#myCarousel').carousel();
         });
     </script> -->
 
-    <!-- My JS -->
-    <script src="portfolio.js"></script>
-  </body>
+  <!-- My JS -->
+  <script src="portfolio.js"></script>
+</body>
+
 </html>
