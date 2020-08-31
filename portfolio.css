@@ -26,6 +26,8 @@ html {
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -36,8 +38,10 @@ body {
 }
 
 .container {
-  width: 90%;
-  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  /* border: solid red 1px; */
 }
 
 #section_projects,
@@ -52,7 +56,7 @@ body {
 
 header {
   background: var(--primary-color);
-  /* border: solid #000 2px; */
+  border: solid #000 2px;
   text-align: center;
   height: 100vh;
   overflow: hidden;
@@ -131,6 +135,17 @@ nav ul li a:hover {
 
 /*----------------------------------------About Me----------------------------------------*/
 
+#div_aboutMe {
+  background: url('./temp_img.jpg') no-repeat;
+  background-size: cover;
+  /* border: solid green 2px; */
+  margin-top: 2rem;
+  width: 100%;
+  height: 100%;
+  /* height: 100vh; */
+  /* padding-top: 150px; */
+}
+
 .overlay {
   background: rgb(0, 0, 0, .6);
   height: 100%;
@@ -138,32 +153,18 @@ nav ul li a:hover {
   /* border: solid yellow 2px; */
 }
 
-#div_aboutMe {
-  background: url('./temp_img.jpg') no-repeat;
-  background-size: cover;
-  /* border: solid green 2px; */
-  margin-top: 40px;
-  height: 100vh;
-  /* padding-top: 150px; */
-}
-
-#div_aboutMe > div {
-  /* border: solid #000 2px; */
-  /* padding-top: 50px; */
-  /* padding-top: 5rem; */
-  /* border: red solid 2px; */
-}
 
 .overlay > .container > div {
-  padding-top: 2rem;
+  padding-top: 9.5rem;
 }
 
 #div_aboutMe div h2 {
   padding-bottom: 0.5rem;
 }
 
-#div_aboutMe div p {
-  line-height: 2.5rem;
+#div_aboutMe .overlay .container div p {
+  line-height: 2;
+  margin-bottom: 2.7em;
 }
 
 
@@ -200,16 +201,24 @@ nav ul li a:hover {
 /*----------------------------------------Projects----------------------------------------*/
 
 #section_projects {
+  /* border: solid 1px blue; */
   height: 100vh;
 }
 
+#section_projects h1 {
+  margin-top: 300;
+}
+
 .carousel {
-  min-height: 600px;
+  height: 40rem;
   padding: 25px;
+  /* border: solid red 1px; */
 }
 
 .card {
   min-width: 500px;
+  min-height: 500px;
+  margin: auto;
 }
 
 .carousel .bg-primary {
@@ -220,11 +229,6 @@ nav ul li a:hover {
 .carousel .text-primary p,
 .carousel .text-primary h5 {
   color: #000 !important;
-}
-
-.card {
-  margin: auto;
-  height: 500px;
 }
 
 .card .btn-primary {
@@ -247,6 +251,10 @@ nav ul li a:hover {
   /* border: solid #000 2px; */
 }
 
+#section_contactMe h1 {
+  font-size: 3em;
+}
+
 #section_contactMe p a {
   color: var(--secondary-color);
 }
@@ -263,244 +271,4 @@ footer {
   text-align: center;
 }
 
-/*----------------------------------------Mobile View----------------------------------------*/
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-
-  .container {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: auto;
-    /* border: green solid 2px; */
-  }
-
-  header {
-    border-radius: 0;
-    height: 100vh;
-    position: relative;
-  }
-
-  /* @keyframes header {
-    0% {
-      height: 0px;
-    }
-    100% {
-      height: 1000px;
-    }
-  } */
-
-  /* nav ul {
-          display: block;
-          height: 0px;
-          overflow: hidden;
-      }
-  
-      .h2_menu {
-          display: block;
-          font-size: 20px;
-      } */
-
-
-  /* --------------------Hamburger------------------------ */
-
-  /* Initially Hide The Menu */
-
-  /* Make nav vertical. */
-
-  .div_navigation {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 70px;
-    min-height: 410px;
-    opacity: 0.9;
-  }
-
-
-  nav {
-    border: #333 solid;
-    border-top: none;
-    margin-top: 50px;
-    width: 100%;
-    position: static;
-    opacity: 0;
-    transition-property: opacity, height;
-    transition-duration: 0.3s;
-  }
-
-  nav ul {
-    display: block;
-    width: 100%;
-    min-height: 350px;
-  }
-
-  nav ul li {
-    width: 100%;
-    padding-top: 100px;
-  }
-
-  nav ul li:nth-child(1) {
-    padding-top: 20px;
-  }
-
-  /* Create And Position Hamburger */
-  .hamburger,
-  .toggler {
-    display: inline-block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    height: 50px;
-    width: 70px;
-    background: #000;
-  }
-
-  .hamburger {
-    z-index: 2;
-    border: #333 solid 2px;
-  }
-
-  /* Create And Position Toggler */
-  .toggler {
-    z-index: 3;
-    opacity: 0;
-  }
-
-  .toggler:hover {
-    cursor: pointer;
-  }
-
-  /* Create Hamburger Lines */
-
-  .hamburger > div {
-    background: var(--secondary-color);
-    height: 2px;
-    width: 60%;
-    margin: auto;
-    position: relative;
-    top: 20px;
-    transition-property: transform;
-    transition-duration: 0.5s;
-  }
-
-  .hamburger > div::before,
-  .hamburger > div::after {
-    content: "";
-    height: 2px;
-    background: var(--secondary-color);
-    display: block;
-    position: relative;
-    //top: 10px; 
-  }
-
-  .hamburger > div::before {
-    top: -10px;
-  }
-
-  .hamburger > div::after {
-    top: 10px;
-  }
-
-  /* Toggle menu */
-
-  .toggler:checked ~ nav {
-    opacity: 1;
-    min-height: 400px;
-  }
-
-  .toggler:checked ~ nav > ul {
-    opacity: 1;
-  }
-
-  /* Animate Hamburger */
-
-  .toggler:checked ~ .hamburger > div {
-    transform: rotate(135deg);
-    width: 60%;
-    background: var(--secondary-color);
-  }
-
-  .toggler:checked ~ .hamburger > div::before {
-    opacity: 0;
-  }
-
-  .toggler:checked ~ .hamburger > div::after {
-    top: 0;
-    transform: rotate(270deg);
-    background: var(--secondary-color);
-  }
-
-  /* Resize Image */
-  .img_myImage {
-    height: 300px;
-  }
-
-
-  /* About Me */
-
-  #div_aboutMe  {
-    background: url('temp_img_mobile.jpg') no-repeat;
-    background-size: cover;
-    margin-top: 0;
-    /* border: solid red 2px; */
-  }
-
-
-  #div_aboutMe div {
-    /* padding-top: 500px; */
-    /* padding-top: 0; */
-  }
-
-  .overlay .container > div {
-    /* margin-top: 0; */
-    /* border: solid powderblue 2px; */
-    width: 100%;
-    height: 100%;
-    margin: 0 0;
-  } 
-
-
-  #div_aboutMe div p {
-    line-height: 2;
-  }
-
-
-  .btn {
-    /* margin-top: 10px; */
-  }
-
-  /* Projects */
-
-
-  #section_projects {
-    /* border: solid orange 2px; */
-    padding: 0;
-  }
-
-  .carousel {
-    min-height: 0;
-    max-height: 400px;
-    width: 370px;
-    margin: auto;
-    /* border: green solid 2px; */
-    overflow: hidden;
-    padding: 40px;
-  }
-
-  .card {
-    min-width: 200px;
-  }
-
-
-}
-
-@media (orientation: landscape) {
-  #div_aboutMe {
-    /* border: purple solid 2px; */
-  }
-  .container {
-    /* margin: 0; */
-  }
-}
