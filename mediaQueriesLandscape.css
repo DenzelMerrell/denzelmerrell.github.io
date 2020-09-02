@@ -48,7 +48,7 @@
     /* Projects */
   
     #section_projects {
-      border: solid 1px blue;
+      /* border: solid 1px blue; */
       height: 50rem;
       padding: 3em 0;
     }
@@ -59,7 +59,7 @@
   
     .carousel {
       min-height: 0;
-      height: 38rem;
+      height: 32rem;
       /* width: 370px; */
       width: 45rem;
       margin: auto;
@@ -71,8 +71,9 @@
   
     .card {
       width: 20rem;
-      height: 15rem; 
+      height: 25rem; 
       padding: 0;
+      /* border: red solid 1px; */
     }
   
   }
