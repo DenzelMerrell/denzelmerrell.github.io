@@ -1,8 +1,13 @@
 /*----------------------------------------Mobile View----------------------------------------*/
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 808px) {
     /* For mobile phones: */
   
+    .stopScroll {
+      height: 100vh;
+      overflow: hidden;
+    }
+
     .container {
       width: 95%;
       height: 100%;
@@ -20,6 +25,7 @@
       animation-duration: 4s;
       animation-direction: forwards;
       font-family: var(--primary-font);
+      
     }
   
     /* @keyframes header {
@@ -49,6 +55,7 @@
   
     #div_aboutMe {
       background: url('./temp_img_mobile_long.jpg') no-repeat;
+      background: url('./My_Picture_Mobile.jpg') no-repeat;
       background-size: cover;
       /* border: solid green 2px; */
       margin-top: 0;

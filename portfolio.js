@@ -20,6 +20,14 @@ var distance = $('nav').offset().top,
 // });
 
 
+let div_hamburger = document.querySelector('.hamburger');
+
+div_hamburger.addEventListener('mouseOver', () => {
+    alert('clicked');
+    document.querySelector('body').classList.add('stopScroll');
+})
+
+
 
 
 

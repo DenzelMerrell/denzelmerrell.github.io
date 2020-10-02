@@ -23,6 +23,7 @@
         opacity: 0.9;
         /* border: solid red 1px; */
         z-index: 20;
+        overflow: hidden;
       }
     
       /* nav {
@@ -162,4 +163,12 @@
         background: #000;
       }
 
+}
+
+@media only screen and (orientation: landscape) {
+    nav ul li {
+      width: 100%;
+      padding-top: 1em;
+      /* border: solid green 2px;  */
+    }
 }
