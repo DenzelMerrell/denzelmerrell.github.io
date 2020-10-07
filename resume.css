@@ -1,0 +1,124 @@
+:root {
+    --primary-color: #191919;
+    --primary-color-darker: #111111;
+    --primary-color-lighter: #1d1d1d;
+    --secondary-color: #89cff0;
+    --secondary-color-darker: #24a6e3;
+    --tertiary-color: #4424e3;
+    --primary-font: "Arvo", serif;
+  }
+
+
+
+/*----------------------------------------Header----------------------------------------*/
+
+header {
+    height: 100%;
+}
+
+
+nav ul li {
+    padding-top: 1rem;
+}
+  
+  /*----------------------------------------Resume Page----------------------------------------*/
+  
+  .section_resume {
+    background: var(--primary-color-darker);
+    height: 100%;
+    overflow: hidden;
+    /* padding-top: 2rem; */
+    /* border: solid green 1px; */
+    padding-bottom: 6rem;
+    /* display: none; */
+  }
+  
+  .section_resume div {
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    padding-top: 5rem;
+    /* border: solid green 1px; */
+  }
+  
+  .h1_downloadResume  {
+    font-size: 1.5em;
+    color: var(--secondary-color-darker);
+    font-weight: 1;
+    margin-bottom: 2rem;
+  }
+  
+  .h1_downloadResume:hover {
+      cursor: pointer;
+  }
+  
+  .section_resume div img {
+    width: 100%;
+    margin: auto;
+    /* border: solid green 1px; */
+    /* margin-left: 4rem; */
+  }
+  
+  .section_resume h1 {
+    text-align: center;
+  }
+
+
+  @media only screen and (max-width: 808px) {
+    
+    /* Nav */
+    .div_navigation {
+        height: 2rem;
+        /* border: pink solid 1px; */
+        text-align: center;
+    }
+
+    nav {
+        height: 2rem;
+        /* width: 100%; */
+        /* border: orange solid 1px; */
+    }
+
+    nav ul {
+        /* width: 50%; */
+        /* margin: auto; */
+        margin-left: 11.5rem;
+    }
+
+    nav ul li {
+        padding-top: .7rem;
+        font-size: 1.2em;
+    }
+
+
+    .section_resume {
+        height: 105vh;
+    }
+
+    .section_resume div {
+        width: 98%;
+        padding-top: 5rem;
+    }
+    .section_resume div img {
+        height: 80vh;
+    }
+  }
+
+@media only screen and (min-device-width: 480px) 
+                   and (max-device-width: 813px) 
+                   and (orientation: landscape)  {
+
+    nav ul li {
+        margin-left: 10rem;
+    }
+
+    .section_resume {
+        /* border: solid pink; */
+        height: 70rem;
+    }
+
+    .section_resume div img {
+        height: 100%;
+    }
+    
+}

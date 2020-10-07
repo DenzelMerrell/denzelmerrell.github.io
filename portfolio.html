@@ -8,6 +8,9 @@
     Fix the color scheme.
     Automate addition to carousels.
 
+
+    Carousel stock image: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU
+
 -->
 
 <html>
@@ -27,6 +30,10 @@
   <link rel="stylesheet" href="mediaQueries.css" />
   <link rel="stylesheet" href="mediaQueriesLandscape.css" />
   <link rel="stylesheet" href="hamburger.css" />
+
+
+  <!-- RemixIcon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
   <!-- Arvo Font -->
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet" />
@@ -48,48 +55,35 @@
         <ul>
           <li><a href="#page-top">About Me</a></li>
           <li><a href="#section_projects">Projects</a></li>
-          <li><a href="#section_contactMe">Contact Me</a></li>
+          <li><a href="#section_skills">Contact Me</a></li>
+          <li><a href="#section_contactMe">Skills</a></li>
+          <li><a href="https://github.com/DenzelMerrell" target="_blank">Github</a></li>
+          <li><a class="resume" href="./resume.html">Resume</a></li>
         </ul>
       </nav>
     </div>
 
     <!-- About Me -->
-
-    <!-- <h1 class="h1_welcome">Welcome!</h1> -->
-
     <div id="div_aboutMe">
       <div class="overlay">
         <div class="container">
           <div>
             <h2>About Me</h2>
-            <p class="p_1">
-              Village did removed enjoyed explain nor ham saw calling talking.
-              Securing as informed declared or margaret. Joy horrible moreover
-              man feelings own shy. Request norland neither mistake for yet.
-              Between the for morning assured country believe. On even feet time
-              have an no at. Relation so in confined smallest children unpacked
-              delicate. Why sir end believe uncivil respect. Always get adieus
-              nature day course for common.
+            <p class="p_aboutMe">
+              My name is Denzel Merrell and I am a Computer Science Student at FIU in my junior year. I am pursuing an
+              Internship opportunity
+              with the hope to learn and advance my knowledge in software engineering while adding as much value as
+              possible to your team and organization.
+              My strongest technical skills include proficiency in JavaScript, ReactJS, HTML, CSS and Java,
+              all of which
+              are displayed in the projects and
+              skills sections below along with others.
+              Beyond the skills technical, I believe that I am a quick learner and efficient problem solver with
+              excellent
+              communication and teamwork abilities.
+              Please reach me at the contacts below.
             </p>
-            <p class="p_2">
-              Village did removed enjoyed explain nor ham saw calling talking.
-              Securing as informed declared or margaret. Joy horrible moreover
-              man feelings own shy. Request norland neither mistake for yet.
-              Between the for morning assured country believe. On even feet time
-              have an no at. Relation so in confined smallest children unpacked
-              delicate. Why sir end believe uncivil respect. Always get adieus
-              nature day course for common.
-            </p>
-            <p class="p_2">
-              Village did removed enjoyed explain nor ham saw calling talking.
-              Securing as informed declared or margaret. Joy horrible moreover
-              man feelings own shy. Request norland neither mistake for yet.
-              Between the for morning assured country believe. On even feet time
-              have an no at. Relation so in confined smallest children unpacked
-              delicate. Why sir end believe uncivil respect. Always get adieus
-              nature day course for common.
-            </p>
-            <button class="btn btn-primary" type="button">More...</button>
+            <!-- <button class="btn btn-primary" type="button">More...</button> -->
           </div>
         </div>
       </div>
@@ -105,78 +99,80 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> -->
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="card bg-primary text-primary" style="width: 18rem;">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
-              class="card-img-top" alt="..." />
+            <img src="./portfolioPic.JPG" class="card-img-top" alt="..." />
             <div class="card-body">
-              <h5 class="card-title">Project title</h5>
-              <p class="card-text">Project Description.</p>
-              <a href="#" class="btn btn-primary">Github Link</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <div class="card bg-primary text-primary" style="width: 18rem;">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
-                class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Project title</h5>
-                <p class="card-text">Project Description.</p>
-                <a href="#" class="btn btn-primary">Github Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <div class="card bg-primary text-primary" style="width: 18rem;">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
-                class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Project title</h5>
-                <p class="card-text">Project Description.</p>
-                <a href="#" class="btn btn-primary">Github Link</a>
-              </div>
+              <h5 class="card-title">THIS SITE</h5>
+              <p class="card-text">I developed this portfolio using vanilla HTML, CSS and Javascript.</p>
+              <a href="https://github.com/DenzelMerrell/My-Portfolio" target="_blank" class="btn btn-primary">Github</a>
             </div>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      </a> -->
+      <!-- <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
+      </a> -->
     </div>
     <!-- </div> -->
   </section>
 
-  <!-- Contact Me -->
 
-  <section id="section_contactMe">
-    <h1>Contact Me</h1>
-    <div>
-      <p>Cell: <a href="tel:5554280940">555-428-0940</a></p>
-      <p>
-        Email: <a href="mailto:something@gmail.com">something@gmail.com</a>
-      </p>
-    </div>
+  <!-- Skills -->
+  <section class="section_contactAndSkills">
+    <section id="section_skills">
+      <div class="container">
+        <div class="div_strongestSkills">
+          <h2>Strongest Skills</h2>
+          <ul>
+            <li>Javascript</li>
+            <li>HTML</li>
+            <li>Css</li>
+            <li>ReactJS</li>
+            <li>Java</li>
+            <li>Bootstrap</li>
+            <li>OOP</li>
+          </ul>
+        </div>
+
+        <div class="div_otherSkills">
+          <h2>Some Knowledge Of</h2>
+          <ul>
+            <li>NodeJS</li>
+            <li>Python</li>
+            <li>MySQL</li>
+            <li>Git/Github</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Me -->
+
+    <section id="section_contactMe">
+      <h1>Contact Me</h1>
+      <div>
+        <p>Phone: <a href="tel:7868991501">786-899-1501</a></p>
+        <p>
+          Email: <a href="denzelmerr015@fiu.edu">denzelmerr015@fiu.edu</a>
+        </p>
+      </div>
+    </section>
   </section>
 
   <footer>
-    some text here
+    Denzel Merrell Portfolio
   </footer>
+
 
   <!-- Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -195,6 +191,7 @@
             $('#myCarousel').carousel();
         });
     </script> -->
+
 
   <!-- My JS -->
   <script src="portfolio.js"></script>
