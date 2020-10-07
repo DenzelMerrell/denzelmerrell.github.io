@@ -28,9 +28,6 @@
   <link rel="stylesheet" href="mediaQueriesLandscape.css" />
   <link rel="stylesheet" href="hamburger.css" />
 
-  <!-- RemixIcon -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
   <!-- Arvo Font -->
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet" />
 
@@ -54,12 +51,15 @@
           <li><a href="#section_contactAndSkills">Contact Me</a></li>
           <li><a href="#section_contactAndSkills">Skills</a></li>
           <li><a href="#">Github</a></li>
-          <li><a class="resume" href="#">Resume</a></li>
+          <li><a class="resume" href="#" onclick="window.open('./resume_portfolioCopy.docx')">Resume</a></li>
         </ul>
       </nav>
     </div>
 
     <!-- About Me -->
+
+    <!-- <h1 class="h1_welcome">Welcome!</h1> -->
+
     <div id="div_aboutMe">
       <div class="overlay">
         <div class="container">
@@ -87,21 +87,6 @@
 
 
   </header>
-
-
-  <!-- Resume Drop Down Button -->
-  <section class="section_resumeDropDown">
-    <h1>See Resume <i class="icon ri-arrow-down-s-fill"></i></h1>
-  </section>
-
-  <!-- Resume -->
-  <section class="section_resume">
-    <div>
-      <h1 class="h1_downloadResume" onclick="window.open('./resume_portfolioCopy.docx')">Download</h1>
-      <img src="./Resume_img.JPG" />
-      <h1>Close <i class="icon ri-arrow-up-s-fill"></i></h1>
-    </div>
-  </section>
 
   <!-- Projects -->
   <section id="section_projects" class="page-projects">
@@ -211,7 +196,6 @@
     Denzel Merrell Portfolio
   </footer>
 
-
   <!-- Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -229,7 +213,6 @@
             $('#myCarousel').carousel();
         });
     </script> -->
-
 
   <!-- My JS -->
   <script src="portfolio.js"></script>

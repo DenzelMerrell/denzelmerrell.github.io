@@ -106,7 +106,7 @@ nav {
 
 nav ul {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   list-style: none;
   padding-top: none;
   transition-property: opacity;
@@ -158,7 +158,7 @@ nav ul li a:hover {
 }
 
 .overlay {
-  background: rgb(0, 0, 0, .7);
+  background: rgb(0, 0, 0, .8);
   height: 100%;
   width: 100%;
   /* border: solid yellow 2px; */
@@ -173,8 +173,8 @@ nav ul li a:hover {
   padding-bottom: 0.5rem;
 }
 
-#div_aboutMe .overlay .container div p {
-  line-height: 2;
+.p_aboutMe {
+  line-height: 5;
   margin-bottom: 2.7em;
 }
 
@@ -209,10 +209,68 @@ nav ul li a:hover {
   background: var(--primary-color-darker);
 }
 
+/*----------------------------------------Resume DropDown----------------------------------------*/
+  .section_resumeDropDown {
+    background: var(--primary-color-darker);
+    text-align: center;
+    height: 2rem;
+    /* border: solid green 1px; */
+  }
+
+  .icon {
+    color: var(--secondary-color-darker);
+  }
+
+
+
+  .section_resumeDropDown h1, .section_resume h1  {
+    font-size: 1.5em;
+    color: var(--secondary-color-darker);
+    font-weight: 1;
+  }
+
+  .section_resumeDropDown h1:hover, .section_resume h1:hover {
+    cursor: pointer;
+  }
+
+ /*----------------------------------------Resume----------------------------------------*/
+
+  .section_resume {
+    background: var(--primary-color-darker);
+    height: 0;
+    overflow: hidden;
+    /* padding-top: 2rem; */
+    /* border: solid green 1px; */
+    /* padding-bottom: 2rem; */
+    display: none;
+  }
+
+  .section_resume div {
+    width: 50%;
+    margin: auto;
+    align-items: center;
+    /* border: solid green 1px; */
+  }
+
+
+
+  .section_resume img {
+    width: 40rem;
+    /* border: solid green 1px; */
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .section_resume h1 {
+    text-align: center;
+  }
+
+
 /*----------------------------------------Projects----------------------------------------*/
 
 #section_projects {
   /* border: solid 1px blue; */
+  /* background: var(--primary-color); */
   height: 100vh;
 }
 
@@ -260,11 +318,56 @@ nav ul li a:hover {
   box-shadow: none !important;
 }
 
+/*----------------------------------------Skills----------------------------------------*/
+
+.section_contactAndSkills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+
+#section_skills {
+  background: var(--primary-color);
+  border-right: solid #000 1px;
+  height: 100%;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+
+}
+
+#section_skills .container  {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  /* border: solid red 1px; */
+  /* align-items: center; */
+  /* margin-left: 28rem; */
+}
+
+#section_skills h2 {
+  font-size: 1.5em;
+  margin-bottom: 1.5rem;
+}
+
+#section_skills ul {
+  display: grid;
+  grid-template-columns: .8fr 1fr;
+  /* border: solid green 1px; */
+  /* align-items: flex-end; */
+}
+
+#section_skills h2, #section_skills li {
+  /* color: var(--secondary-color); */
+  list-style: none;
+  padding: .5rem 0;
+}
+
 /*----------------------------------------Contact Me----------------------------------------*/
 
 #section_contactMe {
   background: var(--primary-color);
-  /* border: solid #000 2px; */
+  /* border: solid green 2px; */
 }
 
 #section_contactMe h1 {
