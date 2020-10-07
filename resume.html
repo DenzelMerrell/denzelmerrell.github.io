@@ -26,7 +26,9 @@
   <link rel="stylesheet" href="portfolio.css" />
   <link rel="stylesheet" href="mediaQueries.css" />
   <link rel="stylesheet" href="mediaQueriesLandscape.css" />
-  <link rel="stylesheet" href="hamburger.css" />
+  <!-- <link rel="stylesheet" href="hamburger.css" /> -->
+  <link rel="stylesheet" href="resume.css" />
+
 
   <!-- Arvo Font -->
   <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet" />
@@ -38,184 +40,45 @@
   <header>
     <!-- Navigation -->
     <div class="div_navigation">
-      <input class="toggler" type="checkbox" />
+      <!-- <input class="toggler" type="checkbox" /> -->
       <!-- Hamburger -->
-      <div class="hamburger">
+      <!-- <div class="hamburger">
         <div></div>
-      </div>
+      </div> -->
 
       <nav>
         <ul>
-          <li><a href="#page-top">About Me</a></li>
-          <li><a href="#section_projects">Projects</a></li>
-          <li><a href="#section_contactAndSkills">Contact Me</a></li>
-          <li><a href="#section_contactAndSkills">Skills</a></li>
-          <li><a href="#">Github</a></li>
-          <li><a class="resume" href="#" onclick="window.open('./resume_portfolioCopy.docx')">Resume</a></li>
+          <li><a href="./portfolio.html">Back</a></li>
         </ul>
       </nav>
     </div>
-
-    <!-- About Me -->
-
-    <!-- <h1 class="h1_welcome">Welcome!</h1> -->
-
-    <div id="div_aboutMe">
-      <div class="overlay">
-        <div class="container">
-          <div>
-            <h2>About Me</h2>
-            <p class="p_aboutMe">
-              My name is Denzel Merrell and I am a Computer Science Student at FIU in my junior year. I am pursuing an
-              Internship opportunity
-              with the hope to learn and advance my knowledge in software engineering while adding as much value as
-              possible to your team and organization.
-              My strongest technical skills include proficiency in JavaScript, ReactJS, HTML, CSS and Java,
-              all of which
-              are displayed in the projects and
-              skills sections below along with others.
-              Beyond the skills technical, I believe that I am a quick learner and efficient problem solver with
-              excellent
-              communication and teamwork abilities.
-              Please reach me at the contacts below.
-            </p>
-            <!-- <button class="btn btn-primary" type="button">More...</button> -->
-          </div>
-        </div>
-      </div>
-    </div>
-
-
   </header>
 
-  <!-- Projects -->
-  <section id="section_projects" class="page-projects">
-    <!-- <div class="container"> -->
-    <h1>Projects</h1>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="card bg-primary text-primary" style="width: 18rem;">
-            <img src="./portfolioPic.JPG" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">THIS SITE</h5>
-              <p class="card-text">I developed this portfolio using vanilla HTML, CSS and Javascript.</p>
-              <a href="#" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <div class="card bg-primary text-primary" style="width: 18rem;">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
-                class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Project title</h5>
-                <p class="card-text">Project Description.</p>
-                <a href="#" class="btn btn-primary">Github Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <div class="card bg-primary text-primary" style="width: 18rem;">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
-                class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Project title</h5>
-                <p class="card-text">Project Description.</p>
-                <a href="#" class="btn btn-primary">Github Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+  <!-- Resume -->
+  <section class="section_resume">
+    <div>
+      <h1 class="h1_downloadResume" onclick="window.open('./resume_portfolioCopy.docx')">Download</h1>
+      <img src="./Resume_img.JPG" />
     </div>
-    <!-- </div> -->
   </section>
 
 
-  <!-- Skills -->
-  <section class="section_contactAndSkills">
-    <section id="section_skills">
-      <div class="container">
-        <div class="div_strongestSkills">
-          <h2>Strongest Skills</h2>
-          <ul>
-            <li>Javascript</li>
-            <li>HTML</li>
-            <li>Css</li>
-            <li>ReactJS</li>
-            <li>Java</li>
-            <li>Bootstrap</li>
-            <li>OOP</li>
-          </ul>
-        </div>
+  <!-- Contact Me -->
 
-        <div class="div_otherSkills">
-          <h2>Also Familiar With</h2>
-          <ul>
-            <li>NodeJS</li>
-            <li>Python</li>
-            <li>MySQL</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Me -->
-
-    <section id="section_contactMe">
-      <h1>Contact Me</h1>
-      <div>
-        <p>Phone: <a href="tel:7868991501">786-899-1501</a></p>
-        <p>
-          Email: <a href="denzelmerr015@fiu.edu">denzelmerr015@fiu.edu</a>
-        </p>
-      </div>
-    </section>
+  <section id="section_contactMe">
+    <h1>Contact Me</h1>
+    <div>
+      <p>Phone: <a href="tel:7868991501">786-899-1501</a></p>
+      <p>
+        Email: <a href="denzelmerr015@fiu.edu">denzelmerr015@fiu.edu</a>
+      </p>
+    </div>
   </section>
 
   <footer>
     Denzel Merrell Portfolio
   </footer>
 
-  <!-- Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-
-  <!-- <script type="text/javascript">
-        //starts the carousel
-        $(document).ready(function () {
-            $('#myCarousel').carousel();
-        });
-    </script> -->
-
-  <!-- My JS -->
-  <script src="portfolio.js"></script>
 </body>
 
 </html>

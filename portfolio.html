@@ -8,6 +8,9 @@
     Fix the color scheme.
     Automate addition to carousels.
 
+
+    Carousel stock image: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU
+
 -->
 
 <html>
@@ -27,6 +30,7 @@
   <link rel="stylesheet" href="mediaQueries.css" />
   <link rel="stylesheet" href="mediaQueriesLandscape.css" />
   <link rel="stylesheet" href="hamburger.css" />
+
 
   <!-- RemixIcon -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -51,10 +55,10 @@
         <ul>
           <li><a href="#page-top">About Me</a></li>
           <li><a href="#section_projects">Projects</a></li>
-          <li><a href="#section_contactAndSkills">Contact Me</a></li>
-          <li><a href="#section_contactAndSkills">Skills</a></li>
-          <li><a href="#">Github</a></li>
-          <li><a class="resume" href="#">Resume</a></li>
+          <li><a href="#section_skills">Contact Me</a></li>
+          <li><a href="#section_contactMe">Skills</a></li>
+          <li><a href="https://github.com/DenzelMerrell" target="_blank">Github</a></li>
+          <li><a class="resume" href="./resume.html">Resume</a></li>
         </ul>
       </nav>
     </div>
@@ -88,21 +92,6 @@
 
   </header>
 
-
-  <!-- Resume Drop Down Button -->
-  <section class="section_resumeDropDown">
-    <h1>See Resume <i class="icon ri-arrow-down-s-fill"></i></h1>
-  </section>
-
-  <!-- Resume -->
-  <section class="section_resume">
-    <div>
-      <h1 class="h1_downloadResume" onclick="window.open('./resume_portfolioCopy.docx')">Download</h1>
-      <img src="./Resume_img.JPG" />
-      <h1>Close <i class="icon ri-arrow-up-s-fill"></i></h1>
-    </div>
-  </section>
-
   <!-- Projects -->
   <section id="section_projects" class="page-projects">
     <!-- <div class="container"> -->
@@ -110,8 +99,8 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> -->
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -120,47 +109,19 @@
             <div class="card-body">
               <h5 class="card-title">THIS SITE</h5>
               <p class="card-text">I developed this portfolio using vanilla HTML, CSS and Javascript.</p>
-              <a href="#" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <div class="card bg-primary text-primary" style="width: 18rem;">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
-                class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Project title</h5>
-                <p class="card-text">Project Description.</p>
-                <a href="#" class="btn btn-primary">Github Link</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div>
-            <div class="card bg-primary text-primary" style="width: 18rem;">
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQe9e8kRfrf-gDBjRHHsYiS8qqzTg_3Q2ynVA&usqp=CAU"
-                class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Project title</h5>
-                <p class="card-text">Project Description.</p>
-                <a href="#" class="btn btn-primary">Github Link</a>
-              </div>
+              <a href="https://github.com/DenzelMerrell/My-Portfolio" target="_blank" class="btn btn-primary">Github</a>
             </div>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      </a> -->
+      <!-- <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
+      </a> -->
     </div>
     <!-- </div> -->
   </section>
@@ -184,11 +145,12 @@
         </div>
 
         <div class="div_otherSkills">
-          <h2>Also Familiar With</h2>
+          <h2>Some Knowledge Of</h2>
           <ul>
             <li>NodeJS</li>
             <li>Python</li>
             <li>MySQL</li>
+            <li>Git/Github</li>
           </ul>
         </div>
       </div>
