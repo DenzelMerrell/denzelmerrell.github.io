@@ -127,7 +127,7 @@ nav ul li a:hover {
 
 #div_aboutMe {
   /* background: url('./temp_img.jpg') no-repeat; */
-  background: url('./My_Picture.jpg') no-repeat;
+  background: url('./Img/My_Picture.jpg') no-repeat;
   background-size: cover;
   /* border: solid green 2px; */
   margin-top: 2rem;
@@ -182,10 +182,6 @@ nav ul li a:hover {
   min-height: 500px;
   margin: auto;
   
-}
-
-.card img {
-  /* border: #000 solid 1px; */
 }
 
 .carousel .bg-primary {
@@ -328,7 +324,7 @@ footer {
   /* About Me */
 
   #div_aboutMe {
-    background: url('./temp_img_mobile_long.jpg') no-repeat;
+    background: url('./Img/temp_img_mobile_long.jpg') no-repeat;
     background: url('./My_Picture_Mobile.jpg') no-repeat;
     background-size: cover;
     /* border: solid green 2px; */
@@ -369,17 +365,9 @@ footer {
   }
 
 
-  /* .btn {
-    margin-top: 0;
-    margin-bottom: 2em;
-  } */
-
-
-
   /* Projects */
 
   #section_projects {
-    /* border: solid 1px blue; */
     height: 100vh;
     padding: 3em 0;
   }
@@ -388,11 +376,9 @@ footer {
   .carousel {
     min-height: 0;
     height: 75vh;
-    /* width: 370px; */
     width: 25rem;
     margin: auto;
     margin-bottom: 0;
-    /* border: green solid 2px; */
     overflow: hidden;
     padding: 2em 3em;
   }
@@ -416,11 +402,8 @@ footer {
 
   #section_skills .container  {
     display: block;
-    /* grid-template-columns: 1fr 1fr; */
     width: 100%;
     text-align: center;
-    
-    /* border: solid green 1px; */
   }
 
   #section_skills h2 {
@@ -441,12 +424,6 @@ footer {
   body {
     overflow: hidden;
   }
-
-  header {
-    /* height: 50rem; */
-    /* overflow: visible; */
-  }
-
 
  
 
@@ -511,7 +488,7 @@ footer {
     /* About Me */
   
     #div_aboutMe {
-      background: url("My_Picture_Landscape.jpg") no-repeat;
+      background: url("./Img/My_Picture_Landscape.jpg") no-repeat;
       margin-top: 0;
       padding-top: 0;
       height: 100%;
