@@ -3,11 +3,5 @@ package.json
 package-lock.json
 /.vscode
 Carousel Stock Image
-My_Picture_Landscape.jpg
-My_Picture_Landscape2.jpg
-My_Picture_Mobile.jpg
-My_Picture.jpg
-Resume_img.jpg
-portfolioPic.jpg
+*.jpg
 Resume_portfolioCopy.docx
-temp_img_mobile.jpg
