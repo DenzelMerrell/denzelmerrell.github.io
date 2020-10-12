@@ -180,6 +180,19 @@ nav ul li a:hover {
   
 }
 
+.card img {
+  max-height: 15rem;
+}
+
+.card ul {
+  list-style: none;
+  color: #000;
+}
+
+.card ul li {
+  color: #000;
+}
+
 .carousel .bg-primary {
   background-color: var(--secondary-color-darker) !important;
   color: #000;
@@ -195,6 +208,7 @@ nav ul li a:hover {
   background-color: var(--primary-color-lighter);
   border-color: var(--primary-color-lighter);
 }
+
 
 .card .btn-primary:active,
 .card .btn-primary:focus {
