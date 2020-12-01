@@ -9,6 +9,9 @@
   }
 
 
+  body {
+    overflow: hidden;
+  }
 
 /*----------------------------------------Header----------------------------------------*/
 
@@ -37,32 +40,33 @@ nav ul li {
     width: 50%;
     margin: auto;
     align-items: center;
-    padding-top: 5rem;
+    margin-top: 5rem;
+    text-align: center;
     /* border: solid green 1px; */
   }
   
-  .h1_downloadResume  {
+  .a_downloadResume  {
     font-size: 1.5em;
     color: var(--secondary-color-darker);
+    text-decoration: none;
     font-weight: 1;
     margin-bottom: 2rem;
+    text-align: center;
   }
   
-  .h1_downloadResume:hover {
+  .a_downloadResume:hover {
       cursor: pointer;
+      text-decoration: none;
+      color: var(--secondary-color-darker);
   }
   
   .section_resume div img {
     width: 100%;
     margin: auto;
+    margin-top: 1rem;
     /* border: solid green 1px; */
     /* margin-left: 4rem; */
   }
-  
-  .section_resume h1 {
-    text-align: center;
-  }
-
 
   @media only screen and (max-width: 808px) {
     
