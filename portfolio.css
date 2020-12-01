@@ -273,14 +273,6 @@ nav ul li a:hover {
   font-size: 3em;
 }
 
-#section_contactMe p a {
-  color: var(--secondary-color);
-}
-
-#section_contactMe p a:hover {
-  text-decoration: none;
-}
-
 /*----------------------------------------Footer----------------------------------------*/
 
 footer {
