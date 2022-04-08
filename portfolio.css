@@ -44,6 +44,14 @@ body {
   padding: 100px;
 }
 
+.a_viewAll,
+.a_viewAll:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
 /*----------------------------------------Header----------------------------------------*/
 
 header {
@@ -141,7 +149,7 @@ nav ul li a:hover {
 }
 
 
-.overlay > .container > div {
+.overlay>.container>div {
   padding-top: 9.5rem;
 }
 
@@ -168,7 +176,7 @@ nav ul li a:hover {
 }
 
 .carousel {
-  height: 40rem;
+  height: 45rem;
   padding: 25px;
   /* border: solid red 1px; */
 }
@@ -178,7 +186,7 @@ nav ul li a:hover {
   min-height: 500px;
   margin: auto;
   color: #000;
-  
+
 }
 
 .card img {
@@ -236,7 +244,7 @@ nav ul li a:hover {
 
 }
 
-#section_skills .container  {
+#section_skills .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 80%;
@@ -257,7 +265,8 @@ nav ul li a:hover {
   /* align-items: flex-end; */
 }
 
-#section_skills h2, #section_skills li {
+#section_skills h2,
+#section_skills li {
   /* color: var(--secondary-color); */
   list-style: none;
   padding: .5rem 0;
@@ -281,6 +290,8 @@ footer {
   color: #000;
   text-align: center;
 }
+
+
 
 
 
@@ -347,14 +358,14 @@ footer {
     /* border: solid rebeccapurple 2px; */
   }
 
-  .overlay .container > div {
+  .overlay .container>div {
     /* margin-top: 0; */
     /* border: solid powderblue 2px; */
     width: 100%;
     height: 100%;
     margin: 0;
     padding-top: 4rem;
-  } 
+  }
 
   #div_aboutMe div h2 {
     margin: 0;
@@ -397,13 +408,13 @@ footer {
   .section_contactAndSkills {
     display: block;
   }
-  
+
   #section_skills {
     padding: 2rem 0;
   }
 
 
-  #section_skills .container  {
+  #section_skills .container {
     display: block;
     width: 100%;
     text-align: center;
@@ -413,7 +424,7 @@ footer {
     font-size: 1.5em;
     margin-bottom: 1rem;
   }
-  
+
   /* Contact Me */
 
   #section_contactMe h1 {
@@ -428,7 +439,7 @@ footer {
     overflow: hidden;
   }
 
- 
+
 
   .section_projects {
     width: 100vw;
@@ -439,9 +450,9 @@ footer {
     /* width: 100%; */
     margin: 0;
     /* border: solid pink 1px; */
-    
+
   }
-  
+
   .card {
     width: 100vw;
     margin: 0;
@@ -458,118 +469,118 @@ footer {
 
 
 /* -----------------------------------------------------------Landscape--------------------------------------------------------------- */
-@media only screen and (min-device-width: 480px) 
-                   and (max-device-width: 823px) /*was 813*/
-                   and (orientation: landscape) {
-    
-    
-    body {
-      /* overflow: visible; */
-      /* width: 100vw; */
-    }
+@media only screen and (min-device-width: 480px) and (max-device-width: 823px)
 
-    .container {
-      width: 100%;
-      /* height: 100%; */
-      padding: 0;
-      margin: auto;
-      /* border: green solid 2px; */
-    }
-  
-    header {
-      background: var(--primary-color);
-      /* border: solid yellow 2px; */
-      text-align: center;
-      height: 100%;
-      /* overflow: hidden; */
-      font-family: var(--primary-font);
-      margin-top: 0;
-      padding-top: 0;
-    }
+/*was 813*/
+and (orientation: landscape) {
 
 
-    /* About Me */
-  
-    #div_aboutMe {
-      background: url("./Img/My_Picture_Landscape.jpg") no-repeat;
-      margin-top: 0;
-      padding-top: 0;
-      height: 100%;
-      /* border: solid pink; */
-    }
+  body {
+    /* overflow: visible; */
+    /* width: 100vw; */
+  }
 
-    .overlay {
-      /* height: 120vh; */
-      /* overflow: visible; */
-    }
+  .container {
+    width: 100%;
+    /* height: 100%; */
+    padding: 0;
+    margin: auto;
+    /* border: green solid 2px; */
+  }
 
-    #div_aboutMe .overlay .container div {
-      padding-top: 4em;
-    }
-
-    #div_aboutMe div h2 {
-      margin-top: 0;
-    }
-  
-    .p_aboutMe {
-      line-height: 1.5;
-      margin-top: 20px;
-    }
-  
-    .btn {
-      margin-top: 0;
-      margin-bottom: 2em;
-    }
-    /* Projects */
-  
-    #section_projects {
-      /* border: solid 1px blue; */
-      height: 50rem;
-      padding: 3em 0;
-      padding-top: 8rem;
-    }
-  
-    #section_projects h1 {
-      font-size: 2em;
-    }
-  
-    .carousel {
-      min-height: 0;
-      height: 30rem;
-      width: 100vw;
-      margin: auto;
-      margin-bottom: 0;
-      /* border: green solid 2px; */
-      overflow: hidden;
-      padding: 2em 5em;
-    }
-  
-    .card {
-      /* width: 20rem; */
-      height: 22rem; 
-      padding: 0;
-    }
-
-
-    #section_skills {
-      border-right: none;
-      border-bottom: solid #000 1px;
-    }
-
-  
+  header {
+    background: var(--primary-color);
+    /* border: solid yellow 2px; */
+    text-align: center;
+    height: 100%;
+    /* overflow: hidden; */
+    font-family: var(--primary-font);
+    margin-top: 0;
+    padding-top: 0;
   }
 
 
+  /* About Me */
+
+  #div_aboutMe {
+    background: url("./Img/My_Picture_Landscape.jpg") no-repeat;
+    margin-top: 0;
+    padding-top: 0;
+    height: 100%;
+    /* border: solid pink; */
+  }
+
+  .overlay {
+    /* height: 120vh; */
+    /* overflow: visible; */
+  }
+
+  #div_aboutMe .overlay .container div {
+    padding-top: 4em;
+  }
+
+  #div_aboutMe div h2 {
+    margin-top: 0;
+  }
+
+  .p_aboutMe {
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+
+  .btn {
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+
+  /* Projects */
+
+  #section_projects {
+    /* border: solid 1px blue; */
+    height: 50rem;
+    padding: 3em 0;
+    padding-top: 8rem;
+  }
+
+  #section_projects h1 {
+    font-size: 2em;
+  }
+
+  .carousel {
+    min-height: 0;
+    height: 30rem;
+    width: 100vw;
+    margin: auto;
+    margin-bottom: 0;
+    /* border: green solid 2px; */
+    overflow: hidden;
+    padding: 2em 5em;
+  }
+
+  .card {
+    /* width: 20rem; */
+    height: 22rem;
+    padding: 0;
+  }
 
 
- /* ---------------------------------------------------------Hamburger---------------------------------- */
-  @media only screen and (max-width: 813px) {
-  
-    /* Initially Hide The Menu */
-  
-    /* Make nav vertical. */
-  
-    /* .div_navigation {
+  #section_skills {
+    border-right: none;
+    border-bottom: solid #000 1px;
+  }
+
+
+}
+
+
+/* ---------------------------------------------------------Hamburger---------------------------------- */
+@media only screen and (max-width: 813px) {
+
+  /* Initially Hide The Menu */
+
+  /* Make nav vertical. */
+
+  /* .div_navigation {
         position: fixed;
         top: 10px;
         right: 10px;
@@ -577,20 +588,20 @@ footer {
         min-height: 410px;
         opacity: 0.9;
       } */
-    
-      .div_navigation {
-        position: fixed;
-        /* top: 0px;
+
+  .div_navigation {
+    position: fixed;
+    /* top: 0px;
         right: 0px; */
-        width: 100vw;
-        height: 100vh;
-        opacity: 0.9;
-        /* border: solid red 1px; */
-        z-index: 20;
-        overflow: hidden;
-      }
-    
-      /* nav {
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+    /* border: solid red 1px; */
+    z-index: 20;
+    overflow: hidden;
+  }
+
+  /* nav {
         border: #333 solid;
         border-top: none;
         margin-top: 50px;
@@ -601,137 +612,137 @@ footer {
         transition-duration: 0.3s;
       } */
 
-      nav {
-        /* border: #333 solid; */
-        border-top: none;
-        /* border-radius: 40%; */
-        /* box-shadow: 0 0 100px 100px var(--secondary-color-darker); */
-        margin-top: 50px;
-        width: 100%;
-        height: 100%;
-        margin-top: 0;
-        padding-top: 4.5rem;
-        position: static;
-        opacity: 0;
-        transition-property: opacity, height;
-        transition-duration: 0.3s;
-      }
-    
-      nav ul {
-        display: block;
-        width: 100%;
-        min-height: 350px;
-        font-size: 1.4em;
-      }
-    
-      nav ul li {
-        width: 100%;
-        padding-top: 2.5em;
-        /* border: solid green 2px;  */
-      }
-    
-      nav ul li:nth-child(1) {
-        padding-top: 1.8rem;
-      }
+  nav {
+    /* border: #333 solid; */
+    border-top: none;
+    /* border-radius: 40%; */
+    /* box-shadow: 0 0 100px 100px var(--secondary-color-darker); */
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 4.5rem;
+    position: static;
+    opacity: 0;
+    transition-property: opacity, height;
+    transition-duration: 0.3s;
+  }
 
-      nav ul li a {
-        font-size: .8em;
-      }
+  nav ul {
+    display: block;
+    width: 100%;
+    min-height: 350px;
+    font-size: 1.4em;
+  }
 
-  
-    
-      /* Create And Position Hamburger */
-      .hamburger,
-      .toggler {
-        display: inline-block;
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        height: 50px;
-        width: 70px;
-        background: #000;
-      }
-    
-      .hamburger {
-        z-index: 2;
-        border: #333 solid 2px;
-      }
-    
-      /* Create And Position Toggler */
-      .toggler {
-        z-index: 3;
-        opacity: 0;
-      }
-    
-      .toggler:hover {
-        cursor: pointer;
-      }
-    
-      /* Create Hamburger Lines */
-    
-      .hamburger > div {
-        background: var(--secondary-color);
-        height: 2px;
-        width: 60%;
-        margin: auto;
-        position: relative;
-        top: 20px;
-        transition-property: transform;
-        transition-duration: 0.5s;
-      }
-    
-      .hamburger > div::before,
-      .hamburger > div::after {
-        content: "";
-        height: 2px;
-        background: var(--secondary-color);
-        display: block;
-        position: relative;
-        top: 10px; 
-      }
-    
-      .hamburger > div::before {
-        top: -10px;
-      }
-    
-      .hamburger > div::after {
-        top: 10px;
-      }
-    
-      /* Toggle menu */
-    
-      .toggler:checked ~ nav {
-        opacity: 1;
-        min-height: 400px;
-      }
-    
-      .toggler:checked ~ nav > ul {
-        opacity: 1;
-      }
-    
-      /* Animate Hamburger */
-    
-      .toggler:checked ~ .hamburger {
-        background: none;
-        border: none;
-        margin-top: .5rem;
-      }
+  nav ul li {
+    width: 100%;
+    padding-top: 2.5em;
+    /* border: solid green 2px;  */
+  }
 
-      .toggler:checked ~ .hamburger > div {
-        transform: rotate(135deg);
-        width: 60%;
-        background: #000;
-      }
-    
-      .toggler:checked ~ .hamburger > div::before {
-        opacity: 0;
-      }
-    
-      .toggler:checked ~ .hamburger > div::after {
-        top: 0;
-        transform: rotate(270deg);
-        background: #000;
-      }
+  nav ul li:nth-child(1) {
+    padding-top: 1.8rem;
+  }
+
+  nav ul li a {
+    font-size: .8em;
+  }
+
+
+
+  /* Create And Position Hamburger */
+  .hamburger,
+  .toggler {
+    display: inline-block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    height: 50px;
+    width: 70px;
+    background: #000;
+  }
+
+  .hamburger {
+    z-index: 2;
+    border: #333 solid 2px;
+  }
+
+  /* Create And Position Toggler */
+  .toggler {
+    z-index: 3;
+    opacity: 0;
+  }
+
+  .toggler:hover {
+    cursor: pointer;
+  }
+
+  /* Create Hamburger Lines */
+
+  .hamburger>div {
+    background: var(--secondary-color);
+    height: 2px;
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    transition-property: transform;
+    transition-duration: 0.5s;
+  }
+
+  .hamburger>div::before,
+  .hamburger>div::after {
+    content: "";
+    height: 2px;
+    background: var(--secondary-color);
+    display: block;
+    position: relative;
+    top: 10px;
+  }
+
+  .hamburger>div::before {
+    top: -10px;
+  }
+
+  .hamburger>div::after {
+    top: 10px;
+  }
+
+  /* Toggle menu */
+
+  .toggler:checked~nav {
+    opacity: 1;
+    min-height: 400px;
+  }
+
+  .toggler:checked~nav>ul {
+    opacity: 1;
+  }
+
+  /* Animate Hamburger */
+
+  .toggler:checked~.hamburger {
+    background: none;
+    border: none;
+    margin-top: .5rem;
+  }
+
+  .toggler:checked~.hamburger>div {
+    transform: rotate(135deg);
+    width: 60%;
+    background: #000;
+  }
+
+  .toggler:checked~.hamburger>div::before {
+    opacity: 0;
+  }
+
+  .toggler:checked~.hamburger>div::after {
+    top: 0;
+    transform: rotate(270deg);
+    background: #000;
+  }
 
 }
 
@@ -739,6 +750,7 @@ footer {
   nav {
     padding-top: 0;
   }
+
   nav ul li {
     width: 100%;
     padding-top: 1rem;

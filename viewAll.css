@@ -1,0 +1,41 @@
+:root {
+    --primary-color: #191919;
+    --primary-color-darker: #111111;
+    --primary-color-lighter: #1d1d1d;
+    --secondary-color: #89cff0;
+    --secondary-color-darker: #24a6e3;
+    --tertiary-color: #4424e3;
+    --primary-font: "Arvo", serif;
+}
+
+
+body {
+    overflow: hidden;
+}
+
+/*----------------------------------------Header----------------------------------------*/
+
+header {
+    height: 100%;
+}
+
+
+nav ul li {
+    padding-top: 1rem;
+}
+
+.view-all {
+    background: var(--primary-color-darker);
+    /* height: 100%; */
+    /* overflow: hidden; */
+    padding-top: 6em;
+    padding-bottom: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 0px;
+}
+
+.card {
+    background-color: var(--secondary-color-darker) !important;
+    text-align: center;
+}
