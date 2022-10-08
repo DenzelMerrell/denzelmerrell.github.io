@@ -14,7 +14,7 @@
 
   <!-- Css -->
   <link rel="stylesheet" type="text/css" href="portfolio.css" />
-
+  <link rel="stylesheet" href="viewAll.css" />
 
   <!-- RemixIcon -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -39,8 +39,7 @@
         <ul>
           <li><a href="#page-top">About Me</a></li>
           <li><a href="#section_projects">Projects</a></li>
-          <li><a href="#section_skills">Contact Me</a></li>
-          <li><a href="#section_contactMe">Skills</a></li>
+          <li><a href="#section_contactMe">Contact Me</a></li>
           <li><a href="https://github.com/DenzelMerrell" target="_blank">Github</a></li>
           <li><a href="./resume.html">Resume</a></li>
         </ul>
@@ -54,7 +53,7 @@
           <div>
             <h2>About Me</h2>
             <p class="p_aboutMe">
-              Hello, my name is Denzel Merrell. I am a Software Engineer studying Computer Science at FIU and
+              Hello, my name is Denzel Merrell and I am a Software Engineer studying Computer Science at FIU and
               graduating
               December 2022 with a
               Bachelor of Science in Computer Science. I am pursuing a
@@ -82,173 +81,145 @@
   <!-- Projects -->
   <section id="section_projects" class="page-projects">
     <h1>Projects</h1>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner">
-        <!-- -----------------------------------------------------------------PORTFOLIO------------------------------------------------------- -->
-        <div class="carousel-item active">
-          <div class="card bg-primary text-primary" style="width: 18rem;">
-            <img src="./Img/portfolioPic.JPG" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">THIS SITE</h5>
-              <h6>Technologies:</h6>
-              <ul>
-                <li>HTML</li>
-                <li>CSSL</li>
-                <li>Bootstrap</li>
-              </ul>
-              <a href="https://github.com/DenzelMerrell/My-Portfolio" target="_blank" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-        <!-- -----------------------------------------------------------------Hospital Registry------------------------------------------------------- -->
-        <div class="carousel-item">
-          <div class="card bg-primary text-primary" style="width: 18rem;">
-            <img src="./Img/hospital-registry.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="new-icon">new!</p>
-              <h5 class="card-title">Hospital Registry</h5>
-              <p class="card-text">
-                A user interface, server and database for a (fictional) hospital registry database
-              </p>
-              <p>Technologies:</p>
-              <ul>
-                <li>Postgresql</li>
-                <li>Node Js</li>
-                <li>ReactJS</li>
-              </ul>
-              <a href="https://cool-kelpie-787f1a.netlify.app/" target="_blank" class="btn btn-primary">Visit Site</a>
-              <a href="https://github.com/DenzelMerrell/Hospital-Registry-Frontend" target="_blank"
-                class="btn btn-primary">Github Front-End</a>
-              <a href="https://github.com/DenzelMerrell/Hospital-Registry-Backend/tree/master" target="_blank"
-                class="btn btn-primary">Github Back-End</a>
-            </div>
-          </div>
-        </div>
-        <!-- -----------------------------------------------------------------KNIGHTS GAME------------------------------------------------------- -->
-        <div class="carousel-item">
-          <div class="card bg-primary text-primary" style="width: 18rem;">
-            <img src="./Img/Knights_Game_Pic.JPG" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">THE KNIGHT'S TOUR GAME</h5>
-              <p class="card-text">
-                A knight makes as many successive moves around a chessboard as possible. This is a console application
-                created for a school assignment, which I added extra functionality to (Described in the code).
-              </p>
-              <p>Technologies:</p>
-              <ul>
-                <li>Java</li>
-              </ul>
-              <a href="./output.txt" target="_blank" class="btn btn-primary">View Example Output</a>
-              <a href="https://github.com/DenzelMerrell/The-Knight-s-Tour-Game" target="_blank"
-                class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-        <!-- -----------------------------------------------------------------TIC TAC TOE------------------------------------------------------- -->
-        <div class="carousel-item">
-          <div class="card bg-primary text-primary" style="width: 18rem;">
-            <img src="./Img/ticTacToe_pic.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Tic Tac Toe</h5>
-              <p class="card-text">
-                A round based game of Tic Tac Toe
-              </p>
-              <p>Technologies:</p>
-              <ul>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>Css</li>
-              </ul>
-              <a href="https://codepen.io/denzelmerrell/project/editor/DxeEGE" target="_blank"
-                class="btn btn-primary">Codepen</a>
-              <a href="https://github.com/DenzelMerrell/Tic-Tac-Toe/" target="_blank" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- -----------------------------------------------------------------Pizzeria Site------------------------------------------------------- -->
-        <div class="carousel-item">
-          <div class="card bg-primary text-primary" style="width: 18rem;">
-            <img src="./Img/Pizzeria_Site_Pic.JPG" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">PIZZERIA SITE</h5>
-              <p class="card-text">
-                A static website for a pizzeria made with ReactJS
-              </p>
-              <p>Technologies:</p>
-              <ul>
-                <li>ReactJS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>Css</li>
-              </ul>
-              <a href="https://denzelmerrell.github.io/pizzeria/" target="_blank" class="btn btn-primary">Visit Site</a>
-              <a href="https://github.com/DenzelMerrell/pizzeria" target="_blank" class="btn btn-primary">Github</a>
-            </div>
-          </div>
-        </div>
-
-
-
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    <a class="a_viewAll" href="./viewAll.html">view all</a>
-  </section>
-
-  <!-- Skills -->
-  <section class="section_contactAndSkills">
-    <section id="section_skills">
-      <div class="container">
-        <div class="div_strongestSkills">
-          <h2>Strongest Skills</h2>
+    <section class="view-all">
+      <!-- -----------------------------------------------------------------PORTFOLIO------------------------------------------------------- -->
+      <div class="card bg-primary text-primary" style="width: 18rem;">
+        <img src="./Img/portfolioPic.JPG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">THIS SITE</h5>
+          <h6>Technologies:</h6>
           <ul>
-            <li>C#/.NET</li>
-            <li>Java</li>
-            <li>SQL</li>
-            <li>ReactJS</li>
-            <li>NodeJS</li>
+            <li>HTML</li>
+            <li>CSSL</li>
+            <li>Bootstrap</li>
+          </ul>
+          <a href="https://github.com/DenzelMerrell/My-Portfolio" target="_blank" class="btn btn-primary">Github</a>
+        </div>
+      </div>
+
+      <!-- -----------------------------------------------------------------Algebread Game------------------------------------------------------- -->
+      <div class="card bg-primary text-primary" style="width: 18rem;">
+        <img src="./Img/Algebread.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="new-icon">new!</p>
+          <h5 class="card-title">Algebread Game</h5>
+          <p class="card-text">
+            A math game where you solve problems for money. Use the money to buy enough food
+            to prevent your hunger bar from depleting.
+            Answer are optionally viewable so that you can experience all features of the game.
+          </p>
+          <p>Technologies:</p>
+          <ul>
+            <li>ASP.NET</li>
+            <li>C#/.NET Core</li>
             <li>Javascript</li>
+            <li>Postgresql</li>
+            <li>AWS</li>
+          </ul>
+          <a href="https://algebread.herokuapp.com/" target="_blank" class="btn btn-primary">Visit Site</a>
+          <a href="https://github.com/DenzelMerrell/Algebread-frontend" target="_blank" class="btn btn-primary">Github
+            Front-End</a>
+          <a href="https://github.com/DenzelMerrell/algebread-backend" target="_blank" class="btn btn-primary">Github
+            Back-End</a>
+        </div>
+      </div>
+
+
+      <!-- -----------------------------------------------------------------Hospital Registry------------------------------------------------------- -->
+      <div class="card bg-primary text-primary" style="width: 18rem;">
+        <img src="./Img/hospital-registry.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="new-icon">new!</p>
+          <h5 class="card-title">Hospital Registry</h5>
+          <p class="card-text">
+            A user interface, server and database for a (fictional) hospital registry database
+          </p>
+          <p>Technologies:</p>
+          <ul>
+            <li>ReactJS</li>
+            <li>Node Js</li>
+            <li>Postgresql</li>
+          </ul>
+          <a href="https://cool-kelpie-787f1a.netlify.app/" target="_blank" class="btn btn-primary">Visit Site</a>
+          <a href="https://github.com/DenzelMerrell/Hospital-Registry-Frontend" target="_blank"
+            class="btn btn-primary">Github Front-End</a>
+          <a href="https://github.com/DenzelMerrell/Hospital-Registry-Backend/tree/master" target="_blank"
+            class="btn btn-primary">Github Back-End</a>
+        </div>
+      </div>
+      <!-- -----------------------------------------------------------------KNIGHTS GAME------------------------------------------------------- -->
+      <div class="card bg-primary text-primary" style="width: 18rem;">
+        <img src="./Img/Knights_Game_Pic.JPG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">THE KNIGHT'S TOUR GAME</h5>
+          <p class="card-text">
+            A knight makes as many successive moves around a chessboard as possible. This is a console
+            application
+            created for a school assignment, which I added extra functionality to (Described in the code).
+          </p>
+          <p>Technologies:</p>
+          <ul>
+            <li>Java</li>
+          </ul>
+          <a href="./output.txt" target="_blank" class="btn btn-primary">View Example Output</a>
+          <a href="https://github.com/DenzelMerrell/The-Knight-s-Tour-Game" target="_blank"
+            class="btn btn-primary">Github</a>
+        </div>
+      </div>
+      <!-- -----------------------------------------------------------------TIC TAC TOE------------------------------------------------------- -->
+      <div class="card bg-primary text-primary" style="width: 18rem;">
+        <img src="./Img/ticTacToe_pic.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Tic Tac Toe</h5>
+          <p class="card-text">
+            A round based game of Tic Tac Toe
+          </p>
+          <p>Technologies:</p>
+          <ul>
+            <li>JavaScript</li>
             <li>HTML</li>
             <li>Css</li>
-            <li>Java</li>
-            <li>Object-Oriented Programming</li>
           </ul>
+          <a href="https://codepen.io/denzelmerrell/project/editor/DxeEGE" target="_blank"
+            class="btn btn-primary">Codepen</a>
+          <a href="https://github.com/DenzelMerrell/Tic-Tac-Toe/" target="_blank" class="btn btn-primary">Github</a>
         </div>
-
-        <div class="div_otherSkills">
-          <h2>Some Knowledge Of</h2>
+      </div>
+      <!-- -----------------------------------------------------------------Pizzeria Site------------------------------------------------------- -->
+      <div class="card bg-primary text-primary" style="width: 18rem;">
+        <img src="./Img/Pizzeria_Site_Pic.JPG" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">PIZZERIA SITE</h5>
+          <p class="card-text">
+            A static website for a pizzeria made with ReactJS
+          </p>
+          <p>Technologies:</p>
           <ul>
-            <li>Python</li>
+            <li>ReactJS</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>Css</li>
           </ul>
+          <a href="https://denzelmerrell.github.io/pizzeria/" target="_blank" class="btn btn-primary">Visit
+            Site</a>
+          <a href="https://github.com/DenzelMerrell/pizzeria" target="_blank" class="btn btn-primary">Github</a>
         </div>
       </div>
     </section>
 
-    <!-- Contact Me -->
+  </section>
 
-    <section id="section_contactMe">
-      <h1>Contact Me</h1>
-      <div>
-        <p>Phone: 786-899-1501</p>
-        <p>
-          Email: denzelmerrell@gmail.com
-        </p>
-      </div>
-    </section>
+  <!-- Contact Me -->
+
+  <section id="section_contactMe">
+    <h1>Contact Me</h1>
+    <div>
+      <p>Phone: 786-899-1501</p>
+      <p>
+        Email: denzelmerrell@gmail.com
+      </p>
+    </div>
+  </section>
   </section>
 
   <footer>

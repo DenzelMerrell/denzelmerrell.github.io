@@ -25,7 +25,7 @@ nav ul li {
 }
 
 .view-all {
-    background: var(--primary-color-darker);
+    /* background: var(--primary-color-darker); */
     /* height: 100%; */
     /* overflow: hidden; */
     padding-top: 6em;
@@ -38,4 +38,25 @@ nav ul li {
 .card {
     background-color: var(--secondary-color-darker) !important;
     text-align: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1150px) {
+
+    #div_aboutMe {
+        height: 100%;
+        /* overflow: visible; */
+    }
+
+    #section_projects {
+        height: 100%;
+    }
+
+    .view-all {
+        padding-top: 6em;
+        padding-bottom: 6rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
 }
