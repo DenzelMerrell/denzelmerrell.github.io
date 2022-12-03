@@ -52,6 +52,8 @@ body {
 
 
 
+
+
 /*----------------------------------------Header----------------------------------------*/
 
 header {
@@ -444,7 +446,6 @@ footer {
   }
 
 
-
   .section_projects {
     width: 100vw;
     margin: 0;
@@ -477,7 +478,6 @@ footer {
 
 /*was 813*/
 and (orientation: landscape) {
-
 
   body {
     /* overflow: visible; */
@@ -535,6 +535,7 @@ and (orientation: landscape) {
   .btn {
     margin-top: 0;
     margin-bottom: 2em;
+    display: block;
   }
 
   /* Projects */
@@ -601,7 +602,7 @@ and (orientation: landscape) {
     height: 100vh;
     opacity: 0.9;
     /* border: solid red 1px; */
-    z-index: 20;
+    /* z-index: 20; */
     overflow: hidden;
   }
 
@@ -630,6 +631,7 @@ and (orientation: landscape) {
     opacity: 0;
     transition-property: opacity, height;
     transition-duration: 0.3s;
+    display: block;
   }
 
   nav ul {
@@ -720,6 +722,10 @@ and (orientation: landscape) {
     min-height: 400px;
   }
 
+  .toggler:not(:checked)~nav {
+    display: none;
+  }
+
   .toggler:checked~nav>ul {
     opacity: 1;
   }
@@ -740,6 +746,7 @@ and (orientation: landscape) {
 
   .toggler:checked~.hamburger>div::before {
     opacity: 0;
+    display: none;
   }
 
   .toggler:checked~.hamburger>div::after {
