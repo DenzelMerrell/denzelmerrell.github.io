@@ -135,7 +135,7 @@ nav ul li a:hover {
 
 #div_aboutMe {
   /* background: url('./temp_img.jpg') no-repeat; */
-  background: url('./Img/My_Picture.jpg') no-repeat;
+  background: url('./Img/My_Picture2.jpeg') no-repeat;
   background-size: cover;
   /* border: solid green 2px; */
   margin-top: 2rem;
@@ -347,8 +347,7 @@ footer {
   /* About Me */
 
   #div_aboutMe {
-    background: url('./Img/temp_img_mobile_long.jpg') no-repeat;
-    background: url('./My_Picture_Mobile.jpg') no-repeat;
+    background: url('./Img/My_Picture2.jpeg') no-repeat;
     background-size: cover;
     /* border: solid green 2px; */
     margin-top: 0;
